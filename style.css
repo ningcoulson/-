@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#threeCanvas {
+    display: block;
+}
+
+.controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.control-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+input[type="range"] {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.value {
+    color: #fff;
+    font-size: 11px;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    background: linear-gradient(45deg, #fff, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #999;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    z-index: 20;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .controls {
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+        font-size: 10px;
+    }
+    
+    .title {
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 18px;
+    }
+    
+    input[type="range"] {
+        width: 120px;
+    }
+}
